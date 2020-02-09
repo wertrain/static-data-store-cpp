@@ -117,11 +117,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Includes\StatsData.h" />
     <ClInclude Include="Includes\StatsManager.h" />
     <ClInclude Include="Includes\StatsValue.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sources\Main.cpp" />
+    <ClCompile Include="Sources\StatsData.cpp" />
     <ClCompile Include="Sources\StatsManager.cpp" />
     <ClCompile Include="Sources\StatsValue.cpp" />
   </ItemGroup>

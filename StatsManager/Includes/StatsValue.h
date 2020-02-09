@@ -22,6 +22,7 @@ public:
     void SetUInt64(uint64_t value);
     void SetFloat(float value);
     void SetDouble(double value);
+    void Clear();
 
 private:
     uint64_t m_value;
