@@ -23,6 +23,7 @@
     <ProjectGuid>{F7E78426-AE61-446D-93C5-82B9ECD1127B}</ProjectGuid>
     <RootNamespace>StatsManager</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>StaticDataStore</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
