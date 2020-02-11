@@ -1,1 +1,1 @@
-# stats-manager-cpp
+# static-data-store-cpp
