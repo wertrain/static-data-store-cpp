@@ -1,10 +1,10 @@
-#include "StatsData.h"
+#include "StoredData.h"
 
-StatsData::StatsData()
+StoredData::StoredData()
 {
 }
 
-void StatsData::Clear()
+void StoredData::Clear()
 {
     for (auto&& i : m_values)
     {

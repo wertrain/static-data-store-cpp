@@ -1,14 +1,14 @@
 #pragma once
 
 #include <array>
-#include "StatsData.h"
+#include "StoredData.h"
 
-class StatsManager
+class StaticDataStore
 {
 public:
     static const int MaxUserNum = 8;
-    StatsManager();
-    ~StatsManager();
+    StaticDataStore();
+    ~StaticDataStore();
 
     int AddUser(const int userId);
     bool RemoveUser(const int userId);
@@ -16,7 +16,7 @@ public:
 private:
     struct UserContext
     {
-        StatsData statsData;
+        StoredData statsData;
         int32_t used;
     };
 

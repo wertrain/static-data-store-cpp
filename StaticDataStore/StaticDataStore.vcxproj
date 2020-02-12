@@ -118,15 +118,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Includes\StatsData.h" />
-    <ClInclude Include="Includes\StatsManager.h" />
-    <ClInclude Include="Includes\StatsValue.h" />
+    <ClInclude Include="Includes\StaticDataStore.h" />
+    <ClInclude Include="Includes\StoredData.h" />
+    <ClInclude Include="Includes\StoredDataValue.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sources\Main.cpp" />
-    <ClCompile Include="Sources\StatsData.cpp" />
-    <ClCompile Include="Sources\StatsManager.cpp" />
-    <ClCompile Include="Sources\StatsValue.cpp" />
+    <ClCompile Include="Sources\StaticDataStore.cpp" />
+    <ClCompile Include="Sources\StoredData.cpp" />
+    <ClCompile Include="Sources\StoredDataValue.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

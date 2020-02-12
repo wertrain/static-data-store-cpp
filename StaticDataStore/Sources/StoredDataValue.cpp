@@ -1,13 +1,13 @@
-#include "StatsValue.h"
+#include "StoredDataValue.h"
 
-StatsValue::StatsValue()
+StoredDataValue::StoredDataValue()
     : m_value(0)
     , m_type(TYPE_UNDECIDED)
 {
 
 }
 
-void StatsValue::SetInt32(int32_t value)
+void StoredDataValue::SetInt32(int32_t value)
 {
     union
     {
@@ -19,7 +19,7 @@ void StatsValue::SetInt32(int32_t value)
     m_type = TYPE_INT32;
 }
 
-void StatsValue::SetUInt32(uint32_t value)
+void StoredDataValue::SetUInt32(uint32_t value)
 {
     union
     {
@@ -31,7 +31,7 @@ void StatsValue::SetUInt32(uint32_t value)
     m_type = TYPE_UINT32;
 }
 
-void StatsValue::SetInt64(int64_t value)
+void StoredDataValue::SetInt64(int64_t value)
 {
     union
     {
@@ -43,13 +43,13 @@ void StatsValue::SetInt64(int64_t value)
     m_type = TYPE_INT64;
 }
 
-void StatsValue::SetUInt64(uint64_t value)
+void StoredDataValue::SetUInt64(uint64_t value)
 {
     m_value = value;
     m_type = TYPE_UINT64;
 }
 
-void StatsValue::SetFloat(float value)
+void StoredDataValue::SetFloat(float value)
 {
     union
     {
@@ -61,7 +61,7 @@ void StatsValue::SetFloat(float value)
     m_type = TYPE_FLOAT;
 }
 
-void StatsValue::SetDouble(double value)
+void StoredDataValue::SetDouble(double value)
 {
     union
     {
@@ -73,7 +73,7 @@ void StatsValue::SetDouble(double value)
     m_type = TYPE_DOUBLE;
 }
 
-void StatsValue::Clear()
+void StoredDataValue::Clear()
 {
     m_value = 0;
     m_type = TYPE_UNDECIDED;

@@ -1,17 +1,17 @@
 #pragma once
 #include <array>
 
-#include "StatsValue.h"
+#include "StoredDataValue.h"
 
-class StatsData
+class StoredData
 {
 public:
     static const int MaxDataNum = 1024;
 
 public:
-    StatsData();
+    StoredData();
     void Clear();
 
 private:
-    std::array<StatsValue, MaxDataNum> m_values;
+    std::array<StoredDataValue, MaxDataNum> m_values;
 };

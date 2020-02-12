@@ -1,17 +1,17 @@
-#include "StatsManager.h"
+#include "StaticDataStore.h"
 
-StatsManager::StatsManager()
+StaticDataStore::StaticDataStore()
     : m_contexts()
 {
 
 }
 
-StatsManager::~StatsManager()
+StaticDataStore::~StaticDataStore()
 {
 
 }
 
-int StatsManager::AddUser(const int userId)
+int StaticDataStore::AddUser(const int userId)
 {
     if (m_contexts.size() > userId)
     {
@@ -24,7 +24,7 @@ int StatsManager::AddUser(const int userId)
     return -1;
 }
 
-bool StatsManager::RemoveUser(const int userId)
+bool StaticDataStore::RemoveUser(const int userId)
 {
     if (m_contexts.size() > userId)
     {

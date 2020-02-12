@@ -1,7 +1,7 @@
 #pragma once
 #include <cinttypes>
 
-class StatsValue
+class StoredDataValue
 {
 public:
     enum ValueType : int32_t
@@ -15,7 +15,7 @@ public:
         TYPE_DOUBLE
     };
 
-    StatsValue();
+    StoredDataValue();
     void SetInt32(int32_t value);
     void SetUInt32(uint32_t value);
     void SetInt64(int64_t value);
