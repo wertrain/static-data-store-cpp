@@ -16,12 +16,18 @@ public:
     };
 
     StoredDataValue();
-    void SetInt32(int32_t value);
-    void SetUInt32(uint32_t value);
-    void SetInt64(int64_t value);
-    void SetUInt64(uint64_t value);
-    void SetFloat(float value);
-    void SetDouble(double value);
+    StoredDataValue(const int32_t value)  { Set(value); }
+    StoredDataValue(const uint32_t value) { Set(value); }
+    StoredDataValue(const int64_t value)  { Set(value); }
+    StoredDataValue(const uint64_t value) { Set(value); }
+    StoredDataValue(const float value)    { Set(value); }
+    StoredDataValue(const double value)   { Set(value); }
+    void Set(const int32_t value);
+    void Set(const uint32_t value);
+    void Set(const int64_t value);
+    void Set(const uint64_t value);
+    void Set(const float value);
+    void Set(const double value);
     void Clear();
 
 private:

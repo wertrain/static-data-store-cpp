@@ -1,6 +1,6 @@
 #pragma once
-#include <array>
 
+#include <array>
 #include "StoredDataValue.h"
 
 class StoredData

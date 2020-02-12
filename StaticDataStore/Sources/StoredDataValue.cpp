@@ -7,7 +7,7 @@ StoredDataValue::StoredDataValue()
 
 }
 
-void StoredDataValue::SetInt32(int32_t value)
+void StoredDataValue::Set(const int32_t value)
 {
     union
     {
@@ -19,7 +19,7 @@ void StoredDataValue::SetInt32(int32_t value)
     m_type = TYPE_INT32;
 }
 
-void StoredDataValue::SetUInt32(uint32_t value)
+void StoredDataValue::Set(const uint32_t value)
 {
     union
     {
@@ -31,7 +31,7 @@ void StoredDataValue::SetUInt32(uint32_t value)
     m_type = TYPE_UINT32;
 }
 
-void StoredDataValue::SetInt64(int64_t value)
+void StoredDataValue::Set(const int64_t value)
 {
     union
     {
@@ -43,13 +43,13 @@ void StoredDataValue::SetInt64(int64_t value)
     m_type = TYPE_INT64;
 }
 
-void StoredDataValue::SetUInt64(uint64_t value)
+void StoredDataValue::Set(const uint64_t value)
 {
     m_value = value;
     m_type = TYPE_UINT64;
 }
 
-void StoredDataValue::SetFloat(float value)
+void StoredDataValue::Set(const float value)
 {
     union
     {
@@ -61,7 +61,7 @@ void StoredDataValue::SetFloat(float value)
     m_type = TYPE_FLOAT;
 }
 
-void StoredDataValue::SetDouble(double value)
+void StoredDataValue::Set(const double value)
 {
     union
     {
