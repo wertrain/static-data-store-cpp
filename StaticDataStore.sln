@@ -5,6 +5,11 @@ VisualStudioVersion = 15.0.28307.757
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StaticDataStore", "StaticDataStore\StaticDataStore.vcxproj", "{F7E78426-AE61-446D-93C5-82B9ECD1127B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sample", "Sample\Sample.vcxproj", "{B609B7CB-10D7-45AB-8235-EE75D832167C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F7E78426-AE61-446D-93C5-82B9ECD1127B} = {F7E78426-AE61-446D-93C5-82B9ECD1127B}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -15,6 +20,10 @@ Global
 		{F7E78426-AE61-446D-93C5-82B9ECD1127B}.Debug|x64.Build.0 = Debug|x64
 		{F7E78426-AE61-446D-93C5-82B9ECD1127B}.Release|x64.ActiveCfg = Release|x64
 		{F7E78426-AE61-446D-93C5-82B9ECD1127B}.Release|x64.Build.0 = Release|x64
+		{B609B7CB-10D7-45AB-8235-EE75D832167C}.Debug|x64.ActiveCfg = Debug|x64
+		{B609B7CB-10D7-45AB-8235-EE75D832167C}.Debug|x64.Build.0 = Debug|x64
+		{B609B7CB-10D7-45AB-8235-EE75D832167C}.Release|x64.ActiveCfg = Release|x64
+		{B609B7CB-10D7-45AB-8235-EE75D832167C}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
