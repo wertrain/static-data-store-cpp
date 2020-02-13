@@ -18,6 +18,12 @@ public:
         TYPE_DOUBLE
     };
 
+    enum OperatorType : int32_t
+    {
+        OP_SUM,
+        OP_REPLACE,
+    };
+
     StoredDataValue();
     StoredDataValue(const int32_t value)  { Set(value); }
     StoredDataValue(const uint32_t value) { Set(value); }

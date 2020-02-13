@@ -69,6 +69,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Includes\DefaultStoredDataRule.h" />
     <ClInclude Include="Includes\StaticDataStore.h" />
     <ClInclude Include="Includes\StoredData.h" />
     <ClInclude Include="Includes\StoredDataManager.h" />
