@@ -1,5 +1,8 @@
 #include "StoredData.h"
 
+namespace nnfw
+{
+
 StoredData::StoredData()
 {
 }
@@ -11,3 +14,5 @@ void StoredData::Clear()
         i.Clear();
     }
 }
+
+} // end of namespace nnfw

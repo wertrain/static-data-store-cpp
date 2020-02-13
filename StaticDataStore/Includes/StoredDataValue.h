@@ -1,6 +1,9 @@
 #pragma once
 #include <cinttypes>
 
+namespace nnfw
+{
+
 class StoredDataValue
 {
 public:
@@ -34,3 +37,5 @@ private:
     uint64_t m_value;
     ValueType m_type;
 };
+
+} // end of namespace nnfw

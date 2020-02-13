@@ -40,17 +40,17 @@
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -120,12 +120,14 @@
   <ItemGroup>
     <ClInclude Include="Includes\StaticDataStore.h" />
     <ClInclude Include="Includes\StoredData.h" />
+    <ClInclude Include="Includes\StoredDataManager.h" />
+    <ClInclude Include="Includes\StoredDataUtil.h" />
     <ClInclude Include="Includes\StoredDataValue.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Sources\Main.cpp" />
     <ClCompile Include="Sources\StaticDataStore.cpp" />
     <ClCompile Include="Sources\StoredData.cpp" />
+    <ClCompile Include="Sources\StoredDataManager.cpp" />
     <ClCompile Include="Sources\StoredDataValue.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

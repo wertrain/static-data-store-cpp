@@ -1,5 +1,8 @@
 #include "StoredDataValue.h"
 
+namespace nnfw
+{
+
 StoredDataValue::StoredDataValue()
     : m_value(0)
     , m_type(TYPE_UNDECIDED)
@@ -78,3 +81,5 @@ void StoredDataValue::Clear()
     m_value = 0;
     m_type = TYPE_UNDECIDED;
 }
+
+} // end of namespace nnfw

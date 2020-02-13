@@ -3,24 +3,22 @@
 #include <array>
 #include "StoredData.h"
 
+namespace nnfw
+{
+
 class StaticDataStore
 {
+private:
+    constexpr int GetDataSize() const { return 10; }
+    struct Data
+    {
+        int32_t index;
+    };
+    static constexpr int N = 10;
+    static const Data StoredData[];
+
 public:
     static const int MaxUserNum = 8;
-    StaticDataStore();
-    ~StaticDataStore();
-
-    int AddUser(const int userId);
-    bool RemoveUser(const int userId);
-
-private:
-    struct UserContext
-    {
-        StoredData statsData;
-        int32_t used;
-    };
-
-private:
-    std::array<UserContext, MaxUserNum> m_contexts;
 };
 
+} // end of namespace nnfw

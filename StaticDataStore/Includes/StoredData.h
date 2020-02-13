@@ -3,6 +3,9 @@
 #include <array>
 #include "StoredDataValue.h"
 
+namespace nnfw
+{
+
 class StoredData
 {
 public:
@@ -15,3 +18,5 @@ public:
 private:
     std::array<StoredDataValue, MaxDataNum> m_values;
 };
+
+} // end of namespace nnfw
