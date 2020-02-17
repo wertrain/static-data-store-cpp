@@ -20,6 +20,8 @@ public:
 
     enum OperatorType : int32_t
     {
+        OP_MIN,
+        OP_MAX,
         OP_SUM,
         OP_REPLACE,
     };
